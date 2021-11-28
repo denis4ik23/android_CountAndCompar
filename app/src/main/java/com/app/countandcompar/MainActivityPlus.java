@@ -1,16 +1,13 @@
 package com.app.countandcompar;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-
 import static com.app.countandcompar.NumberRandom.numberRandom;
 
 public class MainActivityPlus extends AppCompatActivity {
@@ -29,6 +26,7 @@ public class MainActivityPlus extends AppCompatActivity {
 
         numbRandom1 = (TextView) findViewById(R.id.numbRandom1);
         numbRandom2 = (TextView) findViewById(R.id.numbRandom2);
+
         result1 = (TextView) findViewById(R.id.textView8);
         result2 = (TextView) findViewById(R.id.textView9);
         result3 = (TextView) findViewById(R.id.textView10);
@@ -52,14 +50,9 @@ public class MainActivityPlus extends AppCompatActivity {
         result1.setText(String.valueOf(shuffledAnswers[0]));
         result2.setText(String.valueOf(shuffledAnswers[1]));
         result3.setText(String.valueOf(shuffledAnswers[2]));
-
     }
-
     public void onClickPlusResult(View view) {
-
         Intent intent;
         intent = new Intent(MainActivityPlus.this, PlusResult.class);
         startActivity(intent);}
-
-
 }
