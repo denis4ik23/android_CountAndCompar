@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewInterval"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/interval" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:insetLeft="1dp"
+                android:insetTop="1dp"
+                android:insetRight="1dp"
+                android:insetBottom="1dp"
+                android:text="@string/plus"
+                android:textSize="30sp"
+                android:onClick="onClickPlus"
+                app:backgroundTint="#F44336"
+                app:elevation="1dp" />
+
+            <Button
+                android:id="@+id/button2minus"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:insetLeft="1dp"
+                android:insetTop="1dp"
+                android:insetRight="1dp"
+                android:insetBottom="1dp"
+                android:text="@string/minus"
+                android:textSize="30sp"
+                app:backgroundTint="#E91E63"
+                app:elevation="1dp" />
+
+            <Button
+                android:id="@+id/button3multiply"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:insetLeft="1dp"
+                android:insetTop="1dp"
+                android:insetRight="1dp"
+                android:insetBottom="1dp"
+                android:text="@string/multiply"
+                android:textSize="30sp"
+                app:backgroundTint="#9C27B0"
+                app:elevation="1dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button4divide"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:insetLeft="1dp"
+            android:insetTop="1dp"
+            android:insetRight="1dp"
+            android:insetBottom="1dp"
+            android:text="@string/divide"
+            android:textSize="30sp"
+            app:backgroundTint="#009688"
+            app:elevation="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button5more"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:insetLeft="1dp"
+                android:insetTop="1dp"
+                android:insetRight="1dp"
+                android:insetBottom="1dp"
+                android:text="@string/more"
+                android:textSize="30sp"
+                app:backgroundTint="#4CAF50"
+                app:elevation="1dp" />
+
+            <Button
+                android:id="@+id/button7equals"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:insetLeft="1dp"
+                android:insetTop="1dp"
+                android:insetRight="1dp"
+                android:insetBottom="1dp"
+                android:text="@string/equals"
+                android:textSize="30sp"
+                app:backgroundTint="#FFEB3B"
+                app:elevation="1dp" />
+
+            <Button
+                android:id="@+id/button6smaller"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:insetLeft="1dp"
+                android:insetTop="1dp"
+                android:insetRight="1dp"
+                android:insetBottom="1dp"
+                android:text="@string/smaller"
+                android:textSize="30sp"
+                app:backgroundTint="#FF5722"
+                app:elevation="1dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/zastavka" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

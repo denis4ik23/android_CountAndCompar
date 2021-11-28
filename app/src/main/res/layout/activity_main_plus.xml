@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityPlus">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#009688"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="СЛОЖИТЬ ЧИСЛА"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/numbRandom1"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:layout_weight="1"
+                android:background="#E91E63"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="TextView"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textViewRandomPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:layout_weight="1"
+                android:background="#FFC107"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/randomPlus"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/numbRandom2"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:layout_weight="1"
+                android:background="#03A9F4"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="TextView"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:background="#9C27B0"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/nunRunPl"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:layout_weight="1"
+                android:background="#FF5722"
+                android:insetLeft="1dp"
+                android:insetTop="1dp"
+                android:insetRight="1dp"
+                android:insetBottom="1dp"
+                android:text="TextView"
+                android:onClick="onClickPlusResult"
+                app:backgroundTint="#FF5722"
+                app:elevation="1dp" />
+
+            <Button
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:layout_weight="1"
+                android:background="#03A9F4"
+                android:insetLeft="1dp"
+                android:insetTop="1dp"
+                android:insetRight="1dp"
+                android:insetBottom="1dp"
+                android:text="TextView"
+                android:onClick="onClickPlusResult"
+                app:backgroundTint="#03A9F4"
+                app:elevation="1dp" />
+
+            <Button
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:layout_weight="1"
+                android:background="#E91E63"
+                android:insetLeft="1dp"
+                android:insetTop="1dp"
+                android:insetRight="1dp"
+                android:insetBottom="1dp"
+                android:text="TextView"
+                android:onClick="onClickPlusResult"
+                app:backgroundTint="#E91E63"
+                app:elevation="1dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
